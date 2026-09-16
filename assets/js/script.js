@@ -13,7 +13,6 @@ document.addEventListener("click", function (e) {
   }
 });
 
-//port
 // PORTFOLIO TAB
 const tabButtons = document.querySelectorAll(".tab-btn");
 const tabContents = document.querySelectorAll(".portfolio-content");
