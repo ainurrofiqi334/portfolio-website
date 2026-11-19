@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portofolio Ainur Rofiqi - Front-End Developer"
+      content="Portofolio Ainur Rofiqi - Web Developer & Front-End Developer"
     />
     <title>Ainur Rofiqi | Web Developer</title>
 
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -39,16 +39,22 @@
   </head>
 
   <body>
+    <!-- Background Decorative Glows -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
     <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="logo">MyPortfolio</div>
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="logo">Ainur<span>.dev</span></a>
 
       <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#portfolio" class="nav-item">Portfolio</a>
+        <a href="#contact" class="nav-item">Contact</a>
       </div>
+
+      <a href="#contact" class="nav-cta">Let's Talk</a>
 
       <!-- HAMBURGER -->
       <div class="hamburger-menu" id="hamburger-menu">
@@ -56,110 +62,227 @@
       </div>
     </nav>
 
-    <!-- HOME -->
+    <!-- HOME / HERO SPLIT -->
     <section class="home" id="home">
-      <div class="card">
-        <img
-          src="assets/img/IMG-20240415-WA0036.jpg"
-          alt="Foto Profil Ainur Rofiqi"
-          class="profile-img"
-        />
+      <div class="hero-container">
+        <!-- LEFT CONTENT -->
+        <div class="hero-text reveal">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Available for Web Development Projects
+          </div>
 
-        <h1>AINUR ROFIQI</h1>
-        <h2>Web-Developer</h2>
+          <p class="hero-greeting">Halo, Saya</p>
+          <h1 class="hero-title">AINUR <span>ROFIQI</span></h1>
+          <h2 class="hero-subtitle">
+            Creative <span class="gradient-text">Web Developer</span>
+          </h2>
 
-        <p> membuat website modern dan responsif</p>
+          <p class="hero-desc">
+            Berfokus merancang dan membangun website modern, cepat, interaktif,
+            dan responsif dengan pengalaman pengguna (UI/UX) yang optimal.
+          </p>
 
-        <div class="social-icons">
-          <a
-            href="https://www.linkedin.com/in/ainur-rofiqi-77a25340a/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a
-            href="https://github.com/ainurrofiqi334"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
+          <div class="hero-cta-group">
+            <a href="#portfolio" class="btn-primary">
+              <span>Lihat Project</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Hubungi Saya</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Temukan saya di:</span>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/ainur-rofiqi-77a25340a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/ainurrofiqi334"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/an_rofiqi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT VISUAL -->
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="profile-frame">
+            <div class="profile-glow"></div>
+            <img
+              src="assets/img/gopal.jpg"
+              alt="Foto Profil Ainur Rofiqi"
+              class="profile-img"
+            />
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top">
+              <i class="devicon-react-original colored"></i>
+              <div>
+                <strong>Modern UI</strong>
+                <span>React & Tailwind</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <strong>Clean Code</strong>
+                <span>Responsive Web</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
-      <div class="about-container">
+      <div class="section-header reveal">
+        <span class="section-tag">Perkenalan</span>
+        <h2>About <span>Me</span></h2>
+      </div>
+
+      <div class="about-container reveal">
         <div class="about-content">
-          <h2>About Me</h2>
-          <p>
-            Halo! Saya <span> Ainur Rofiqi</span>, Web Developer yang
-            berdedikasi untuk membangun aplikasi web modern, efisien, dan
-            berdampak nyata. Saya menikmati proses merancang solusi dari sisi
-            antarmuka pengguna (front-end) hingga pengelolaan logika dan
-            arsitektur sistem (back-end). andal.
-          </p>
-          <p>
-            Dengan passion di bidang pengembangan web, saya selalu antusias
-            mengeksplorasi teknologi terbaru, mengoptimalkan performa sistem,
-            serta menciptakan pengalaman pengguna yang responsif dan interaktif.
-          </p>
+          <div class="about-text">
+            <p>
+              Halo! Saya <span>Ainur Rofiqi</span>, seorang
+              <strong>Web Developer</strong> yang berdedikasi untuk membangun
+              aplikasi web modern, efisien, dan berdampak nyata. Saya menikmati
+              . proses merancang solusi dari sisi antarmuka pengguna
+              (<em>front-end</em>) hingga pengelolaan logika dan arsitektur
+              sistem (<em>back-end</em>) yang andal.
+            </p>
+            <p>
+              Dengan passion tinggi di bidang pengembangan web, saya selalu
+              antusias mengeksplorasi teknologi terbaru, mengoptimalkan performa
+              sistem, serta menciptakan pengalaman pengguna yang responsif dan
+              interaktif di berbagai perangkat.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div>
+                <h3>Front-End Focus</h3>
+                <p>Antarmuka modern, responsif & interaktif</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <div>
+                <h3>Web Architecture</h3>
+                <p>Integrasi REST API & kerangka kerja modern</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div>
+                <h3>Fast & Clean</h3>
+                <p>Kode terstruktur dan performa optimal</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- PORTFOLIO -->
     <section class="portfolio" id="portfolio">
-      <div class="portfolio-header">
-        <h2>My Portfolio</h2>
-        <p>Beberapa skill, project, dan sertifikat yang saya miliki.</p>
+      <div class="portfolio-header reveal">
+        <span class="section-tag">Karya & Keahlian</span>
+        <h2>My <span>Portfolio</span></h2>
+        <p>
+          Beberapa keahlian teknologi, proyek pilihan, dan sertifikasi yang saya
+          miliki.
+        </p>
       </div>
 
       <!-- TAB BUTTONS -->
-      <div class="portfolio-buttons">
-        <button class="tab-btn active" data-tab="skills">Skills</button>
-        <button class="tab-btn" data-tab="projects">Projects</button>
-        <button class="tab-btn" data-tab="certificates">Certificates</button>
+      <div class="portfolio-buttons reveal">
+        <button class="tab-btn active" data-tab="skills">
+          <i class="fa-solid fa-layer-group"></i> Skills
+        </button>
+        <button class="tab-btn" data-tab="projects">
+          <i class="fa-solid fa-briefcase"></i> Projects
+        </button>
+        <button class="tab-btn" data-tab="certificates">
+          <i class="fa-solid fa-award"></i> Certificates
+        </button>
       </div>
 
       <!-- SKILLS TAB -->
       <div class="portfolio-content active" id="skills">
         <div class="skill-grid">
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <i class="devicon-html5-plain colored"></i>
-            <h3>HTML</h3>
+            <h3>HTML5</h3>
+            <span class="skill-level">Semantic Markup</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <i class="devicon-css3-plain colored"></i>
-            <h3>CSS</h3>
+            <h3>CSS3</h3>
+            <span class="skill-level">Modern Layout</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <i class="devicon-javascript-plain colored"></i>
             <h3>JavaScript</h3>
+            <span class="skill-level">ES6+ & DOM</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <i class="devicon-bootstrap-plain colored"></i>
             <h3>Bootstrap</h3>
+            <span class="skill-level">UI Framework</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <i class="devicon-tailwindcss-original colored"></i>
             <h3>Tailwind CSS</h3>
+            <span class="skill-level">Utility-First CSS</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <i class="devicon-react-original colored"></i>
             <h3>React</h3>
+            <span class="skill-level">Component UI</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <i class="devicon-git-plain colored"></i>
             <h3>Git</h3>
+            <span class="skill-level">Version Control</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <i class="devicon-github-original"></i>
             <h3>GitHub</h3>
+            <span class="skill-level">Collaboration</span>
           </div>
         </div>
       </div>
@@ -168,125 +291,151 @@
       <div class="portfolio-content" id="projects">
         <div class="portfolio-grid">
           <!-- PROJECT 1 -->
-          <div class="portfolio-card">
-            <img
-              src="assets/img/Cuplikan layar 2026-08-12 000148.png"
-              alt="E-Commerce Penjualan Online"
-            />
+          <div class="portfolio-card reveal">
+            <div class="card-image-wrapper">
+              <img
+                src="assets/img/Cuplikan layar 2026-08-12 000148.png"
+                alt="E-Commerce Penjualan Online"
+              />
+              <div class="card-tags">
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
             <div class="card-content">
               <h3>E-Commerce Penjualan Online</h3>
               <p>
-                Website toko online interaktif dan responsif yang dikembangkan
-                menggunakan framework Bootstrap.
+                Website toko online interaktif dan responsif lengkap dengan
+                halaman pelanggan dan dashboard admin.
               </p>
               <div class="project-buttons">
                 <a
                   href="project-ecommerce.html"
-                  
                   rel="noopener noreferrer"
                   class="demo-btn"
-                  >Preview</a
                 >
+                  <i class="fa-regular fa-eye"></i> Preview
+                </a>
                 <a
                   href="https://github.com/ainurrofiqi334/cishop"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="github-btn"
-                  >GitHub</a
                 >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
               </div>
             </div>
           </div>
 
           <!-- PROJECT 2 -->
-          <div class="portfolio-card">
-            <img
-              src="assets/img/Cuplikan layar 2026-07-26 234203.png"
-              alt="Sistem Penggajian Karyawan"
-            />
+          <div class="portfolio-card reveal">
+            <div class="card-image-wrapper">
+              <img
+                src="assets/img/Cuplikan layar 2026-07-26 234203.png"
+                alt="Sistem Penggajian Karyawan"
+              />
+              <div class="card-tags">
+                <span>CodeIgniter 4</span>
+                <span>Tailwind CSS</span>
+              </div>
+            </div>
             <div class="card-content">
               <h3>Sistem Penggajian Karyawan</h3>
               <p>
-                Website sistem penggajian karyawan dengan menggunakan CI4 dan
-                Tailwind CSS.
+                Aplikasi web manajemen penggajian karyawan yang dibangun
+                menggunakan CodeIgniter 4 dan Tailwind CSS.
               </p>
               <div class="project-buttons">
                 <a
-                  href="#""
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="demo-btn"
-                  >Preview</a
                 >
+                  <i class="fa-regular fa-eye"></i> Preview
+                </a>
                 <a
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="github-btn"
-                  >GitHub</a
                 >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
               </div>
             </div>
           </div>
 
           <!-- PROJECT 3 -->
-          <div class="portfolio-card">
-            <img
-              src="assets/img/Cuplikan layar 2026-09-08 125401.png"
-              alt="REST API Movie & Series Search App"
-            />
+          <div class="portfolio-card reveal">
+            <div class="card-image-wrapper">
+              <img
+                src="assets/img/Cuplikan layar 2026-09-08 125401.png"
+                alt="REST API Movie & Series Search App"
+              />
+              <div class="card-tags">
+                <span>React</span>
+                <span>Tailwind</span>
+                <span>REST API</span>
+              </div>
+            </div>
             <div class="card-content">
               <h3>REST API Movie & Series Search App</h3>
               <p>
-                Pencarian film dan serial TV berbasis REST API dengan
-                menggunakan React dan Tailwind.
+                Pencarian film dan serial TV berbasis IMDb REST API dengan
+                menggunakan React dan Tailwind CSS.
               </p>
               <div class="project-buttons">
-                <a
-                  href="movie.html"
-                  
-                  rel="noopener noreferrer"
-                  class="demo-btn"
-                  >Preview</a
-                >
+                <a href="movie.html" rel="noopener noreferrer" class="demo-btn">
+                  <i class="fa-regular fa-eye"></i> Preview
+                </a>
                 <a
                   href="https://github.com/ainurrofiqi334/landing-page"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="github-btn"
-                  >GitHub</a
                 >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
               </div>
             </div>
           </div>
 
           <!-- PROJECT 4 -->
-          <div class="portfolio-card">
-            <img
-              src="assets/img/landing_page.png"
-              alt="Food & Restaurant Landing Page"
-            />
+          <div class="portfolio-card reveal">
+            <div class="card-image-wrapper">
+              <img
+                src="assets/img/landing_page.png"
+                alt="Food & Restaurant Landing Page"
+              />
+              <div class="card-tags">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+              </div>
+            </div>
             <div class="card-content">
               <h3>Food & Restaurant Landing Page</h3>
               <p>
-                Landing page restoran modern dengan React dan Tailwind CSS,
-                dengan desain responsif dan UI yang clean.
+                Landing page restoran NOMNOM modern dengan React dan Tailwind
+                CSS, desain responsif serta UI yang clean.
               </p>
               <div class="project-buttons">
                 <a
                   href="project-tomtom.html"
-                  
                   rel="noopener noreferrer"
                   class="demo-btn"
-                  >Preview</a
                 >
+                  <i class="fa-regular fa-eye"></i> Preview
+                </a>
                 <a
                   href="https://github.com/ainurrofiqi334/nomnom-landing-page"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="github-btn"
-                  >GitHub</a
                 >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
               </div>
             </div>
           </div>
@@ -297,55 +446,77 @@
       <div class="portfolio-content" id="certificates">
         <div class="portfolio-grid">
           <!-- CERTIFICATE 1 -->
-          <div class="portfolio-card">
-            <img
-              src="assets/img/sertifikat_course_653_5380088_241025180739_page-0001.jpg"
-              alt="Sertifikat Dicoding AI"
-            />
+          <div class="portfolio-card reveal">
+            <div class="card-image-wrapper">
+              <img
+                src="assets/img/sertifikat_course_653_5380088_241025180739_page-0001.jpg"
+                alt="Sertifikat Dicoding AI"
+              />
+              <div class="card-tags">
+                <span>Artificial Intelligence</span>
+              </div>
+            </div>
             <div class="card-content">
-              <h3>Dicoding</h3>
-              <p>Sertifikat belajar dasar AI.</p>
+              <h3>Dicoding Indonesia</h3>
+              <p>
+                Sertifikat kompetensi Belajar Dasar Artificial Intelligence
+                (AI).
+              </p>
               <div class="certificate-buttons">
                 <a
                   href="assets/img/sertifikat_course_653_5380088_241025180739.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="detail-btn"
-                  >Detail</a
                 >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat
+                  Sertifikat
+                </a>
               </div>
             </div>
           </div>
 
           <!-- CERTIFICATE 2 -->
-          <div class="portfolio-card">
-            <img
-              src="assets/img/Cuplikan layar 2026-08-11 231141.png"
-              alt="Sertifikat Codepolitan JS"
-            />
+          <div class="portfolio-card reveal">
+            <div class="card-image-wrapper">
+              <img
+                src="assets/img/Cuplikan layar 2026-08-11 231141.png"
+                alt="Sertifikat Codepolitan JS"
+              />
+              <div class="card-tags">
+                <span>JavaScript</span>
+              </div>
+            </div>
             <div class="card-content">
               <h3>Codepolitan</h3>
-              <p>Sertifikat JavaScript dasar.</p>
+              <p>Sertifikat penyelesaian kelas Pemrograman JavaScript Dasar.</p>
               <div class="certificate-buttons">
                 <a
                   href="assets/img/tugas-pengolahan-citra.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="detail-btn"
-                  >Detail</a
                 >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat
+                  Sertifikat
+                </a>
               </div>
             </div>
           </div>
 
           <!-- CERTIFICATE 3 -->
-          <div class="portfolio-card">
-            <img
-              src="assets/img/Cuplikan layar 2026-08-11 230603.png"
-              alt="Sertifikat Cisco Python"
-            />
+          <div class="portfolio-card reveal">
+            <div class="card-image-wrapper">
+              <img
+                src="assets/img/Cuplikan layar 2026-08-11 230603.png"
+                alt="Sertifikat Cisco Python"
+              />
+              <div class="card-tags">
+                <span>Python</span>
+              </div>
+            </div>
             <div class="card-content">
-              <h3>Cisco Networking</h3>
+              <h3>Cisco Networking Academy</h3>
               <p>PCAP: Programming Essentials in Python.</p>
               <div class="certificate-buttons">
                 <a
@@ -353,8 +524,10 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="detail-btn"
-                  >Detail</a
                 >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat
+                  Sertifikat
+                </a>
               </div>
             </div>
           </div>
@@ -364,31 +537,53 @@
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
-      <div class="contact-header">
-        <h2>Contact Me</h2>
+      <div class="contact-header reveal">
+        <span class="section-tag">Hubungi Saya</span>
+        <h2>Get In <span>Touch</span></h2>
         <p>
-          Jika tertarik bekerja sama atau ingin bertanya sesuatu, silakan
-          hubungi saya.
+          Jika tertarik bekerja sama, mendiskusikan project, atau ingin bertanya
+          sesuatu, silakan kirimkan pesan.
         </p>
       </div>
 
-      <div class="contact-container">
+      <div class="contact-container reveal">
         <form id="contact-form" class="contact-form">
-          <div class="input-box">
-            <input type="text" name="name" placeholder="Nama" required />
+          <div class="form-row">
+            <div class="input-box">
+              <label for="name">Nama Lengkap</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Masukkan nama Anda"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="email">Alamat Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nama@email.com"
+                required
+              />
+            </div>
           </div>
           <div class="input-box">
-            <input type="email" name="email" placeholder="Email" required />
-          </div>
-          <div class="input-box">
+            <label for="message">Pesan</label>
             <textarea
+              id="message"
               name="message"
-              rows="6"
-              placeholder="Pesan"
+              rows="5"
+              placeholder="Tuliskan detail project atau pesan Anda..."
               required
             ></textarea>
           </div>
-          <button type="submit" class="contact-btn">Kirim Pesan</button>
+          <button type="submit" class="contact-btn">
+            <span>Kirim Pesan</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
         </form>
       </div>
     </section>
@@ -396,8 +591,10 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
-        <h2 class="footer-logo">Ainur Rofiqi</h2>
-        <p class="footer-text">Thank you for visiting my portfolio website.</p>
+        <h2 class="footer-logo">Ainur<span>.dev</span></h2>
+        <p class="footer-text">
+          Membangun pengalaman web yang modern, bersih, dan fungsional.
+        </p>
 
         <div class="footer-social">
           <a
@@ -426,7 +623,8 @@
           </a>
         </div>
 
-        <p class="footer-copy">© 2026 ainurrofiqi. All rights reserved.</p>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">© 2026 Ainur Rofiqi. All rights reserved.</p>
       </div>
     </footer>
 
